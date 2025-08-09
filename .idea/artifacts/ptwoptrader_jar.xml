@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="ptwoptrader:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/ptwoptrader_jar</output-path>
+    <root id="archive" name="ptwoptrader.jar">
+      <element id="module-output" name="ptwoptrader" />
+    </root>
+  </artifact>
+</component>

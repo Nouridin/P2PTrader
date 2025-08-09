@@ -1,0 +1,31 @@
+name: P2PTrader
+version: 1.0.0
+description: "Free Professional P2P Trading System - Secure, Feature-Rich & Anti-Scam"
+author: "Nouridin"
+website: "https://github.com/Nouridin/P2PTrader"
+main: me.nouridin.p2pTrader.P2pTrader
+api-version: 1.21
+depend: []
+softdepend: []
+
+commands:
+  trade:
+    description: "Start a secure trade with another player"
+    usage: "/trade <player> | /trade help"
+    permission: p2ptrader.trade
+    permission-message: "§c[P2PTrader] §7You don't have permission to use this command!"
+    aliases: [p2p, p2ptrade]
+
+permissions:
+  p2ptrader.trade:
+    description: "Allows players to trade with each other"
+    default: true
+  p2ptrader.admin:
+    description: "Administrative permissions for P2PTrader"
+    default: op
+  p2ptrader.*:
+    description: "Gives access to all P2PTrader permissions"
+    default: op
+    children:
+      p2ptrader.trade: true
+      p2ptrader.admin: true
